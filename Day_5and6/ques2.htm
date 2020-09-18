@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Application</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      h1{
+          text-align: center;
+      }
+
+      .data {
+        height: 90vh;
+        width: 80%;
+        background-color: rgba(153, 47, 185, 0.521);
+        margin-left: 10%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        padding: 20px;
+        display: inline-block;
+      }
+
+      .table {
+        width: 100%;
+        margin-top: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:rgb(255, 0, 0);
+      }
+      th
+      {
+        height: 40px;
+        text-align: center;
+        padding: 5px;
+        font-size: large;
+      }
+      td {
+        height: 40px;
+        text-align: center;
+        padding: 5px;
+      }
+
+      .form {
+        margin-top: 40px;
+      }
+      input {
+        height: 40px;
+        text-indent: 10px;
+      }
+
+      button {
+        padding: 10px;
+      }
+     form
+     {
+        padding-top: 40px;
+     }
+     .sub
+     {
+       margin-top: 10px;
+       padding-left:28%;
+     }
+    </style>
+</head>
+<body>  
+      <div class="data">
+        <h1 >Question 2</h1>
+        <form onsubmit="addBusDetails(event)">
+          <input type="text" required placeholder="Bus Name" id="name" />
+          <input type="text" required placeholder="Source" id="source" />
+          <input type="text" required placeholder="Destination" id="destination" />
+          <input type="number" required placeholder="Bus Number" id="busnum" />
+          <input type="number" required placeholder="Bus Capacity" id="capacity" />
+          <br>
+          <div class ="sub" >
+            <button type="submit">Add Bus Details</button>
+          </div>
+          
+        </form>
+  
+        <div class="form">
+          <input
+            type="text"
+            placeholder="Search by Source"
+            id="searchSource"
+            onkeyup="searchBySource()"
+          />
+          <input
+            type="text"
+            placeholder="Search by Destination"
+            id="searchDestination"
+            onkeyup="searchByDestination()"
+          />
+        </div>
+  
+        <table border="1" class="table" cellspacing="0">
+          <thead>
+            <tr>
+              <th>S No</th>
+              <th>Bus Name</th>
+              <th>Source</th>
+              <th>Destination</th>
+              <th>Bus Number</th>
+              <th>Passenger Capacity</th>
+            </tr>
+          </thead>
+          <tbody class="tdata" id="tdata"></tbody>
+        </table>
+        
+      </div>
+      <script src ="Scripts/ques2.js"></script>
+</body>
+</html>
