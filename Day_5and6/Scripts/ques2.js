@@ -1,23 +1,6 @@
 window.onload = function ()
 {
-let initialarray=[
-//     {
-//       name:"SaiJotiba Transolutions",source:"Hyderabad",destination:"Pune",busnum:4321,capacity:40
-//     },
-//     {
-//       name:"Citizen Tours & Travels",source:"Chennai",destination:"Delhi",busnum:4322,capacity:45
-//     },
-//     {
-//       name:"Indian express",source:"Delhi",destination:"Hyderabad",busnum:4323,capacity:55
-//     },
-//     {
-//       name:"Orange Travels",source:"Kerala",destination:"Bangalore",busnum:4324,capacity:40
-//     },
-//     {
-//       name:"Meghana Bus Services",source:"Bangalore",destination:"Hyderabad",busnum:4325,capacity:50
-//     }
-
-]
+let initialarray=[]
 
 if(localStorage.getItem("busdetails") == null){
   let stringbus=JSON.stringify(initialarray)
